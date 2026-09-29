@@ -23,7 +23,7 @@ MAX_RETRIES = 3
 BASE_BACKOFF_SECONDS = 1.0
 
 client = genai.Client(api_key=API_KEY)
-app = FastAPI(title="Support Chatbot", version="0.1.0")
+app = FastAPI(title="Support Chatbot", version="0.1.1")
 
 chat_sessions: dict[str, genai.chats.Chat] = {}
 
